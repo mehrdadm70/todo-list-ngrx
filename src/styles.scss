@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background min-h-screen;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex items-center gap-2 px-4 py-2 rounded-xl font-bold shadow-sm transition-all duration-200;
+  }
+  .btn-edit {
+    @apply bg-[#C4B5FD] text-white hover:bg-[#A78BFA];
+  }
+  .btn-delete {
+    @apply bg-[#F9A8D4] text-white hover:bg-[#EC4899];
+  }
+  .btn-add {
+    @apply bg-[#5EEAD4] text-white hover:bg-[#2DD4BF];
+  }
+  .input {
+    @apply w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6;
+  }
+}
