@@ -1,27 +1,66 @@
-# TodoApp
+# Todo App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+A beautiful, minimal, and fully responsive Todo application built with modern web technologies.
 
-## Development server
+## Features
+- Add, edit, and delete todos
+- Responsive and mobile-friendly design
+- Minimal and pastel color palette
+- Modern UI with Tailwind CSS
+- State management with NgRx
+- Routing with Angular Router
+- TypeScript support
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tech Stack
+- [Angular 17](https://angular.io/) (Standalone Components)
+- [NgRx](https://ngrx.io/) (State Management)
+- [Tailwind CSS 3](https://tailwindcss.com/) (Utility-first CSS Framework)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm (v9 or higher recommended)
 
-## Build
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/todo-app.git
+   cd todo-app
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Running the App
+Start the development server:
+```bash
+ng serve
+```
+The app will be available at [http://localhost:4200](http://localhost:4200).
 
-## Running unit tests
+### Build for Production
+```bash
+ng build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Folder Structure
+```
+src/
+  app/
+    components/      # Angular components (todo-list, add-todo)
+    store/           # NgRx store (actions, reducers, selectors)
+    ...
+  assets/            # Static assets
+  styles.scss        # Tailwind CSS entry
+  ...
+```
 
-## Running end-to-end tests
+## Customization
+- You can easily change the color palette in `tailwind.config.js`.
+- All UI text is in English and can be customized in the component templates.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+This project is open source and available under the [MIT License](LICENSE).
